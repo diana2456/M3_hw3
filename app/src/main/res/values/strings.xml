@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">M3_hw3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="heading_one">Vaccine Tyres Available</string>
+    <string name="heading_two">Daily Vaccine Schedule</string>
+    <string name="heading_three">Get a Vaccine Certificate</string>
+
+    <string name="desc_one">There are types of vaccines available to accelerate herd immunity, so that this pandemic will quickly disappear</string>
+    <string name="desc_two">Vaccine doses are available every weekday, and make sure you miss getting the fist dose</string>
+    <string name="desc_three">With a vaccine certificate you can travel with your family safely and keep the health protocols</string>
+    <string name="action_settings">Settings</string>
+    <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
+    <string name="start_level">Level 1</string>
+    <string name="next_level">Next Level</string>
+    <string name="level_text">Level %1$d</string>
+    <!-- -
+    This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+    For more information, see https://support.google.com/admob/answer/3052638
+<!- -->
+    <string name="interstitial_ad_unit_id">YOUR_INTERSTITIAL_AD_UNIT_ID</string>
+</resources>
