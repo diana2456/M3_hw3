@@ -5,6 +5,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
@@ -70,5 +72,41 @@ public class Fragment_2 extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        Button next = view.findViewById(R.id.nex);
+        Button skip = view.findViewById(R.id.ski);
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                switch (view.getId()) {
+                    case R.id.nex:
+
+                        Fragment newFragment = new Fragment_3();
+                        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+
+                        FragmentManager fragmentManager = getFragmentManager();
+                        fragmentManager.beginTransaction()
+                                .replace(R.id.container, newFragment).commit();
+                        break;
+                }
+            }
+        });
+        skip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switch (view.getId()) {
+                    case R.id.ski:
+
+                        Fragment newFragmen = new Fragment_1();
+                        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+
+                        FragmentManager fragmentManager = getFragmentManager();
+                        fragmentManager.beginTransaction()
+                                .replace(R.id.container, newFragmen).commit();
+                        break;
+                }
+            }
+        });
     }
 }

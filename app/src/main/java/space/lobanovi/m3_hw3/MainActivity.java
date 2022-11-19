@@ -18,10 +18,10 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button next;
-    Button nex;
-    Button ski;
-    Button sk;
+    //  Button next;
+    // Button nex;
+    //Button ski;
+    //Button sk;
 
 
     @SuppressLint("MissingInflatedId")
@@ -30,17 +30,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ski = findViewById(R.id.ski);
+       /* ski = findViewById(R.id.ski);
         sk = findViewById(R.id.sk);
 
         next = findViewById(R.id.nex);
         nex = findViewById(R.id.next);
 
-                if(savedInstanceState ==  null){
+        */
                     getSupportFragmentManager().beginTransaction().add(R.id.container,new Fragment_1()).commit();
-                }
 
 
+/*
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,5 +69,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+ */
+    }
 }
